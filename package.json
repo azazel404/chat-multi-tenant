@@ -21,8 +21,8 @@
 		"web-vitals": "^0.2.4"
 	},
 	"scripts": {
-		"dev-react": "craco start",
-		"dev-server": "cd server  &&  npm start",
+		"dev-react": "npm install && craco start",
+		"dev-server": "cd server  && npm install && npm start",
 		"start": "concurrently \"npm:dev-server \" \"npm:dev-react\"",
 		"build": "craco build",
 		"test": "craco test",
